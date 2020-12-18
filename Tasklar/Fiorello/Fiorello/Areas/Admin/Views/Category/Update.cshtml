@@ -1,0 +1,25 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "Update";
+}
+
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">@Model.Name</h4>
+            <div>
+                @Html.Raw(Model.Description)
+            </div>
+        </div>
+    </div>
+
+</div>
+<h3 class="text-danger">Are you surc?</h3>
+
+<form method="post">
+  
+    <button type="submit" class="btn btn-danger">Update</button>
+</form>
+<a asp-action="Index" class="btn btn-secondary mt-3">Go Back</a>
+
+

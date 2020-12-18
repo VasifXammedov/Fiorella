@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Vasif\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Vasif\\.nuget\\packages"
+    ]
+  }
+}

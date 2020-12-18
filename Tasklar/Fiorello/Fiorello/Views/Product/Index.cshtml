@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container">
+    <div class="row" id="productList">
+        @await Component.InvokeAsync("Product",8)
+        @*@foreach (Product pro in Model)
+        {
+            <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
+                <div class="product-item text-center">
+                    <div class="img">
+                        <a href="">
+                            <img src="~/img/@pro.Image" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="title mt-3">
+                        <h6>@pro.Title</h6>
+                    </div>
+                    <div class="price">
+                        <span class="text-black-50">Add to cart</span>
+                        <span class="text-black-50">$@pro.Price</span>
+                    </div>
+                </div>
+            </div>
+        }*@
+    </div>
+    <div class="row my-5 justify-content-center">
+        <input type="hidden" id="count" value="@ViewBag.ProCount" />
+        <button class="btn btn-success btn-lg" id="LoadMore">Load...</button>
+        </div>
+</div>
